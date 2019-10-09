@@ -16,7 +16,7 @@ int main (int argc, char *argv[]) {
     // Insert random numbers into array
     for (i = 0; i < ARR_SIZE; i++) {
         arr[i] = rand() % 100;
-        printf("%d\n", arr[i]);
+        // printf("%d\n", arr[i]);  // Prints out the array values
     }
 
     sumA = sumOfArr();
