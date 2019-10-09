@@ -1,24 +1,25 @@
 #include "sumAvg.h"
 
+const int A_SIZE = 5;
+extern int arr[A_SIZE];
+
 int sumOfArr() {
 
-    int arrSum, i = 0;
+    int i, arrSum = 0;
 
-    for(i = 0; i < ARR_SIZE; i++) {
+    for (i = 0; i < A_SIZE; i++) {
         arrSum += arr[i];
     }
 
     return arrSum;
 }
 
-double avgOfArr() {
+float avgOfArr() {
 
-    int i = 0;
-    double avgArr;
-    
-    for (i = 0; i < ARR_SIZE; i++) {
-        avgArr = (avgArr + arr[i]) / ARR_SIZE;
-    }
+    int arrAvg = 0;
+    int arrS = sumOfArr();
 
-    return avgArr;
+    arrAvg = arrS / A_SIZE;
+
+    return arrAvg;
 }

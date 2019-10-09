@@ -4,21 +4,32 @@
 #include "maxArr.h"
 #include "minArr.h"
 
-const int ARR_SIZE = 200;
+const int ARR_SIZE = 5;
 int arr[ARR_SIZE];
 
 int main (int argc, char *argv[]) {
 
-    int i;
-    srand(0);
+    float avgA;
+    int i, k, j, sumA, maxA, minA;
+    srand(0);   // Seed random number generator
 
+    // Insert random numbers into array
     for (i = 0; i < ARR_SIZE; i++) {
-        arr[i] = rand();
+        arr[i] = rand() % 100;
         printf("%d\n", arr[i]);
     }
 
-    int sumA = sumOfArr();
-    printf("%d", sumA);
+    sumA = sumOfArr();
+    printf("The sum of the array is %d\n", sumA);
+
+    avgA = avgOfArr();
+    printf("The average of the array is %f\n", avgA);
+
+    maxA = maxOfArr();
+    printf("The maximum of the array is %d\n", maxA);
+
+    minA = minOfArr();
+    printf("The minimum of the array is %d\n", minA);
 
     return 0;
 }
