@@ -4,7 +4,8 @@
 #include "maxArr.h"
 #include "minArr.h"
 
-const int ARR_SIZE = 5;
+#define ARR_SIZE 5
+
 int arr[ARR_SIZE];
 
 int main (int argc, char *argv[]) {

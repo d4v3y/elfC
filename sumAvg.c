@@ -1,6 +1,6 @@
 #include "sumAvg.h"
+#define A_SIZE 5
 
-const int A_SIZE = 5;
 extern int arr[A_SIZE];
 
 int sumOfArr() {

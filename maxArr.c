@@ -1,6 +1,6 @@
 #include "maxArr.h"
+#define SIZE 5
 
-const int SIZE = 5;
 extern int arr[SIZE];
 
 int maxOfArr() {

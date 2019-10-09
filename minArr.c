@@ -1,6 +1,6 @@
 #include "minArr.h"
+#define SIZE_A 5
 
-const int SIZE_A = 5;
 extern int arr[SIZE_A];
 
 int minOfArr() {
