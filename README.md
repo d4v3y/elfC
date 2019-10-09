@@ -1,2 +1,2 @@
-# elfC
-Develop a better understanding of the Linux run-time environment that a C program operates under.
+# ELF Practice
+C program that stores data in an array, computes the sum, average, maximum and minimum values of the array. A main and three functions is used — a summing/averaging, a maximum and a minimum. Each function is in a separate file. Also, the array is global (so that it is visible to the linker), which is not an argument to any of the functions.
